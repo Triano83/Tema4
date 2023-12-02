@@ -1,3 +1,9 @@
+/**
+ * 
+ * Contar el numero de vocales de manera independiente que tiene una frase
+ * 
+ * @author Jose Luis Triano
+ */
 public class Ejercicio4_3_4 {
 
     public static void main(String[] args) {
