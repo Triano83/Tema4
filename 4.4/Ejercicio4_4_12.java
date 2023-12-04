@@ -8,7 +8,7 @@
 public class Ejercicio4_4_12 {
     public static void main(String[] args) {
         int[] enteros = new int[100];
-        int[] array = null;
+        
         char opcion;
         System.out.println("**************************");
         System.out.println("            Menú: ");
@@ -19,12 +19,14 @@ public class Ejercicio4_4_12 {
 
         do {
             opcion = System.console().readLine("Introduce una Opcion\n").toLowerCase().charAt(0);
+            System.out.println();
+            
             switch (opcion) {
                 case 'a':
 
                     for (int i = 0; i < enteros.length; i++) {
-                        if (array[i] != 0) {
-                            System.out.println("En la posicion " + i + " se encuentra el valor: " + array[i]);
+                        if (enteros[i] != 0) {
+                            System.out.println("En la posicion " + i + " se encuentra el valor: " + enteros[i]);
                         }
                     }
                     System.out.println();
