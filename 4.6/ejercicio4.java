@@ -9,7 +9,7 @@
 
 public class ejercicio4 {
     public static void main(String[] args) {
-
+//Declaracion de variables y array
         int[][] notas = new int[4][5];
         int[] suma = new int[4];
         int sumatoria = 0;
