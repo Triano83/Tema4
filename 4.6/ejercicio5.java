@@ -1,3 +1,11 @@
+/**
+* Compara los sueldos de hombres y mujeres para saber si hay brecha salarial
+*
+*
+*@author Jose Luis Triano
+*/
+
+    
 public class ejercicio5 {
 
     public static void main(String[] args) {
