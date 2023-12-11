@@ -10,6 +10,7 @@
 
 public class ejercicio3 {
     public static void main(String[] args) {
+//Declaracion de variables        
         int mayor = 0;
         int menor = 0;
         int igual = 0;
@@ -22,14 +23,14 @@ public class ejercicio3 {
         columna = Integer.parseInt(System.console().readLine("Introduce un numero de columnas\n"));
 
         int[][] array = new int[fila][columna];
-
+//INtroduce los numeros en las posiciones del Array
         for (filaI = 0; filaI < fila; filaI++) {
             for (columnaJ = 0; columnaJ < columna; columnaJ++) {
                 array[filaI][columnaJ] = Integer
                         .parseInt(System.console().readLine("Introduce un valor para esta posicion\n"));
             }
         }
-
+// Usando los bucles aumentamos los contadores haciendo comparaciónes 
         for (filaI = 0; filaI < fila; filaI++) {
             System.out.println();
             for (columnaJ = 0; columnaJ < columna; columnaJ++) {
