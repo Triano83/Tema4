@@ -1,0 +1,34 @@
+public class prueba {
+    public static void main(String[] args) {
+        
+        String nombre = args[0];
+        String apellido1 = args [1];
+        String apellido2 = args [2];
+        String dni = args[3];
+        boolean formatoValido=true;
+
+
+        //Comprobar el formato de los argumentos
+        for(int i = 0; i<3 ;  i++){
+            formatoValido=formatoValido && args[i].matches("[a-zA-ZÑñ]+");
+        
+        }
+            formatoValido=formatoValido && dni.matches("[0-9]{8}[a-zA-Z]");
+        
+// Generar el usuario imprimir y finalizar
+        if (formatoValido) {
+            String usuario = "" + nombre.toLowerCase().charAt(0);
+            usuario+= apellido1.toLowerCase().substring(0, 3);
+            usuario+=apellido2.toLowerCase().substring(0, 3);
+            usuario+=dni.substring(5,8);
+
+            System.out.println(usuario);
+        }else{
+            System.out.println("Formato no válido");
+        }
+
+
+
+
+    }
+}
